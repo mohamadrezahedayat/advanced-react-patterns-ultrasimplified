@@ -156,7 +156,7 @@ const useClapState = ({ initialState = INIT_STATE } = {}) => {
     ...otherProps
   })
 
-  const getCounterProps = ({ ...otherProps }) => ({
+  const getCounterProps = ({ ...otherProps }={}) => ({
     count,
     'aria-valuemax': MAX_CLAP,
     'aria-valuemin': 0,
